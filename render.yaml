@@ -1,0 +1,22 @@
+databases:
+  - name: Nursing Related Graphics
+    databaseName: nursing_ralated_graphics
+    user: Nursing Related Graphics
+    region: singapore
+
+services:
+  - type: web
+    name: Nursing Related Graphics
+    env: ruby
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: Nursing Related Graphics
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
+
