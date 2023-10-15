@@ -71,9 +71,7 @@ group :test do
   gem "selenium-webdriver"
 end
 
-group :production do
-  gem "pg", "~> 1.4"
-end
+gem "pg", "~> 1.4"
 
 gem 'sorcery'
 
