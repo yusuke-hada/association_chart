@@ -75,3 +75,4 @@ gem "pg", "~> 1.4"
 
 gem 'sorcery'
 
+gem 'uglifier'
