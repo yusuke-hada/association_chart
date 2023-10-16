@@ -24,4 +24,6 @@ production:
   <<: *default
   adapter: postgresql
   encoding: unicode
-  pool: 5
+  database: nursing_ralated_graphics
+  username: nursing_ralated_graphics_user
+  url: <%= ENV['Rails.application.credentials.database_url'] %>
