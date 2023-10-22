@@ -74,3 +74,5 @@ end
 gem "pg", "~> 1.4"
 
 gem 'sorcery'
+gem "bootstrap", "~> 5.2"
+gem 'jquery-rails'
