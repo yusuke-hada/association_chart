@@ -1,15 +1,15 @@
-<nav class="navbar navbar-light bg-light fixed-top">
+<nav class="navbar navbar-light bg-light fixed-top ms-3">
   <!-- タイトル -->
   <%= link_to "Nursing Related Graphics", root_path, class: "navbar-brand" %>
 
   <!-- ログイン前のナビゲーションメニュー -->
   <div class="navbar navbar-expand-lg navbar-light bg-light">
     <ul class="navbar-nav">
-      <li class="nav-item">
-        <%= link_to "ログイン", login_path, class: "nav-link" %>
+      <li class="nav-item me-3">
+        <%= link_to t('views.login.submit_button'), login_path, class: "nav-link" %>
       </li>
-      <li class="nav-item">
-        <%= link_to "会員登録", new_user_path, class: "nav-link" %>
+      <li class="nav-item me-3">
+        <%= link_to  t('views.registration.submit_button'), new_user_path, class: "nav-link" %>
       </li>
     </ul>
   </div>

@@ -1,0 +1,10 @@
+ja:
+  views:
+    login:
+      title: 'ログイン'
+      email: 'メールアドレス'
+      password: 'パスワード'
+      submit_button: 'ログイン'
+    registration:
+      title: '会員登録'
+      submit_button: '登録'

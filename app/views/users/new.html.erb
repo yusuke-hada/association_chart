@@ -1,30 +1,30 @@
 <div class="min-vh-100 d-flex justify-content-center align-items-center">
-<div class="container mt-5 align-items-center">
-  <div class="row">
-    <div class="col-md-7 offset-md-3 border border-5">
-    <h1 class='d-flex justify-content-center mt-3'>会員登録</h1>
-      <%= form_with model: @user, local: true do |f| %>
-        <div class="form-group mt-3">
-          <%= f.label :name %>
-          <%= f.text_field :name, class:'form-control' %>
-        </div>
-        <div class="form-group mt-3">
-          <%= f.label :email %>
-          <%= f.text_field :email, class:'form-control' %>
-        </div>
-        <div class="form-group mt-3">
-          <%= f.label :password %>
-          <%= f.password_field :password, class:'form-control', placeholder: 'パスワードは6文字以上' %>
-        </div>
-        <div class="form-group mt-3">
-          <%= f.label :password_confirmation %>
-          <%= f.password_field :password_confirmation, class:'form-control', placeholder: 'パスワードは6文字以上' %>
-        </div>
-        <div class="form-group text-center mt-3 mb-3">
-          <%= f.submit "登録", class: 'btn btn-primary' %>
-        </div>
-      <% end %>
+  <div class="container mt-5 align-items-center">
+    <div class="row">
+      <div class="col-md-7 offset-md-3 border border-5">
+      <h1 class='d-flex justify-content-center mt-3'><%= t('views.registration.title') %></h1>
+        <%= form_with model: @user, local: true do |f| %>
+          <div class="form-group mt-4 ">
+            <%= f.label :name %>
+            <%= f.text_field :name, class:'form-control' %>
+          </div>
+          <div class="form-group mt-4">
+            <%= f.label :email %>
+            <%= f.text_field :email, class:'form-control' %>
+          </div>
+          <div class="form-group mt-4">
+            <%= f.label :password %>
+            <%= f.password_field :password, class:'form-control', placeholder: 'パスワードは6文字以上' %>
+          </div>
+          <div class="form-group mt-4">
+            <%= f.label :password_confirmation %>
+            <%= f.password_field :password_confirmation, class:'form-control', placeholder: 'パスワードは6文字以上' %>
+          </div>
+          <div class="form-group text-center mt-3 mb-3">
+            <%= f.submit  t('views.registration.submit_button'), class: 'btn btn-primary' %>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
-</div>
 </div>

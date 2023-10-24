@@ -1,23 +1,21 @@
 <!-- ナビゲーションバー -->
-<nav class="navbar navbar-light bg-light fixed-top">
+<nav class="navbar navbar-light bg-light fixed-top d-flex">
   <!-- タイトル -->
-  <%= link_to "Nursing Related Graphics", root_path, class: "navbar-brand" %>
-  <!-- ハンバーガーメニュー -->
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="position: relative; left: -20px;">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    <!-- ナビゲーションメニュー -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class='navbar-nav ml-auto main-nav align-items-center'>
-        <li class="nav-item">
-          <a class="nav-link" href="#">マイページ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">プロフィール</a>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'ログアウト', logout_path, class:"nav-link", data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'}%>
-        </li>
-      </ul>
+  <%= link_to "Nursing Related Graphics", root_path, class: "navbar-brand ms-3" %>
+
+  <!-- ドロップダウンコンポーネント -->
+   <div class="dropdown me-5"
+    <!-- トリガーボタン -->
+    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <%= current_user.name %>
+    </button>
+
+    <!-- ドロップダウンメニュー -->
+    <div class="dropdown-menu custom-dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">マイページ</a>
+      <a class="dropdown-item" href="#">プロフィール</a>
+      <%= link_to 'ログアウト', logout_path, class:"dropdown-item", data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %>
     </div>
-  </nav>
+  </div>
+</nav>
+
