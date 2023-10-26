@@ -1,5 +1,8 @@
 ja:
   views:
+    navbar:
+      profile: "プロフィール"
+      logout: "ログアウト"
     login:
       title: 'ログイン'
       email: 'メールアドレス'
@@ -8,3 +11,14 @@ ja:
     registration:
       title: '会員登録'
       submit_button: '登録'
+    user:
+      show:
+        title: 'プロフィール'
+        name: 'ユーザーネーム: '
+        edit_button: '編集する'
+      edit:
+        title: 'プロフィール編集'
+        name: 'ユーザーネーム'
+        update_button: '更新する'
+        cancel_button: 'キャンセル'
+
