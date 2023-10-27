@@ -12,7 +12,7 @@
 
     <!-- ドロップダウンメニュー -->
     <div class="dropdown-menu custom-dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">マイページ</a>
+      <%= link_to t('views.navbar.mypage'), user_graphics_path(current_user), class:"dropdown-item"%>
       <%= link_to t('views.navbar.profile'), user_path(current_user), class:"dropdown-item"%>
       <%= link_to t('views.navbar.logout'), logout_path, class:"dropdown-item", data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %>
     </div>

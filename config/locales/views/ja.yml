@@ -3,6 +3,7 @@ ja:
     navbar:
       profile: "プロフィール"
       logout: "ログアウト"
+      mypage: "マイページ"
     login:
       title: 'ログイン'
       email: 'メールアドレス'
