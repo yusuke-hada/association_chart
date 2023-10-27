@@ -1,11 +1,18 @@
-<footer id='footer' class='footer-bottom mt-auto'>
+<footer id='footer' class='footer-bottom mt-auto bg-light py-3 fixed-bottom'>
   <div class='container'>
     <div class='row d-flex align-items-center'>
-      <div class='col-sm-12 col-12 text-center'>
-        <div class='copyright'>
-          <p>Copyright © 2023. Nursing Related Graphics</p>
-        </div>
+      <div class='col-sm-3 text-center'>
+          <p>Copyright © 2023. xxxxx</p>
       </div>
+      <div class='col-sm-3 text-center'>
+        <%= link_to 'プライバシーポリシー', page_path('privacy_policy'), class: 'text-dark'%>
+      </div>
+      <div class='col-sm-3 text-center'>
+        <%= link_to '利用規約', page_path('terms_of_service'), class: 'text-dark'%>
+      </div>
+     <div class='col-sm-3 text-center'>
+       <%= link_to 'お問い合わせ先', page_path('contact_information'), class: 'text-dark'%>
+     </div>
     </div>
   </div>
 </footer>
